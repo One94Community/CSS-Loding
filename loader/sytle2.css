@@ -1,0 +1,36 @@
+*{
+  background-color: rgb(126, 126, 126);
+}
+.container2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 50px;
+}
+img{
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  animation: animat 2s ease-in 0s infinite normal;
+  
+  
+}
+.box11{
+  height: 250px;
+  width: 250px;
+  animation: animat 2s ease 0s infinite normal;
+  background-color: rebeccapurple;
+  border: 20px solid gold;
+  border-bottom: 20px solid rgb(144, 32, 218);
+  border-radius: 50%;
+}
+
+@keyframes animat {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

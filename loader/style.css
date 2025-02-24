@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+.box {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+
+  border-top: 50px solid rgb(200, 0, 255);
+  border-left: 50px solid rgb(150, 0, 255);
+  border-bottom: 50px solid rgb(100, 0, 255);
+  border-right: 50px solid rgb(50, 0, 255);
+  animation: animat 5s ease-in 0s infinite normal;
+}
+
+.box1 {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+
+  border-top: 50px solid rgb(200, 0, 255);
+  border-left: 50px solid rgb(150, 0, 255);
+  border-bottom: 50px solid rgb(100, 0, 255);
+  border-right: 50px solid rgb(50, 0, 255);
+  animation: animat 5s ease-in 0s infinite reverse;
+}
+
+@keyframes animat {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
